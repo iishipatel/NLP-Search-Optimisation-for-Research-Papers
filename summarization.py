@@ -10,9 +10,12 @@ document1 ="""Machine learning (ML) is the scientific study of algorithms and st
 
 document2 = """Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done, on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil"""
 
+
+document3="""Your PR was submitted to a repository that is not participating in Hacktoberfest. Maintainers of the repository can add the "hacktoberfest" topic to their repository if they wish to participate. Alternatively, an individual PR can be opted-in with a maintainer adding the "hacktoberfest-accepted" label to the PR."""
+
 nlp = spacy.load('en_core_web_sm')
 
-docx = nlp(document2)
+docx = nlp(document3)
 
 mytokens = [token.text for token in docx]
 
