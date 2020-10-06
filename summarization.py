@@ -12,7 +12,7 @@ document2 = """Our Father who art in heaven, hallowed be thy name. Thy kingdom c
 
 nlp = spacy.load('en_core_web_sm')
 
-docx = nlp(document1)
+docx = nlp(document2)
 
 mytokens = [token.text for token in docx]
 
